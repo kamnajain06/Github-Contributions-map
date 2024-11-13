@@ -1,0 +1,68 @@
+.heatmap {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+}
+
+.month {
+    display: flex;
+    flex-direction: column;
+    gap:7px;
+    flex-basis: 50px;
+    align-items: center;
+}
+
+.month h4{
+    font-size: 15px;
+    text-align: center;
+    margin-bottom: 5px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+}
+
+.week-grid {
+    display: flex;
+    flex-direction: row;
+    /* border: 1px solid; */
+    gap: 5px;
+}
+
+.week {
+    display: flex;
+    flex-direction: column;
+    /* Each week is stacked vertically */
+    gap: 5px;
+}
+
+.day {
+    width: 10px;
+    height: 10px;
+    border-radius: 3px;
+    background-color: #e0e0e0;
+    /* Default gray */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid rgba(0, 0, 0, 0.06);
+}
+
+.day-0 {
+    background-color: #f0f0f0;
+}
+
+.day-1 {
+    background-color: #c6e48b;
+}
+
+.day-2 {
+    background-color: #7bc96f;
+}
+
+.day-3 {
+    background-color: #196127;
+}
+
+.day-prev-month {
+    background-color: #00000069;
+    color: white;
+}
