@@ -1,3 +1,6 @@
+import dotenv from 'dotenv';
+dotenv.config();
+
 window.onload = async () => {
     try {
         const response = await fetch(process.env.API_URL);
