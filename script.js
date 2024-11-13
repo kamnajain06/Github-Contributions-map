@@ -1,6 +1,6 @@
 window.onload = async () => {
     try {
-        const response = await fetch('http://localhost:3000/api/contributions');
+        const response = await fetch(process.env.API_URL);
         const calendar = await response.json();
 
         const heatmapContainer = document.querySelector('.heatmap');
